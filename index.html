@@ -50,10 +50,9 @@
     </header>
     <div class="video-container" id="videoContainer"></div>
     <script>
-        // Your Channel ID and API Key
-        const channelId = 'UCG3vO7tXvn18z50bk2fKwYA';  // Example Channel ID
+        // Your API Key
         const apiKey = 'AIzaSyAzbDGau0yTZR73HP1_XqmqWZpSyGr_A2k';  // Your API key
-        const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&type=video&videoDuration=short&maxResults=50`;
+        const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&type=video&videoDuration=short&maxResults=50`;
 
         // Fetch videos from YouTube API
         fetch(apiUrl)
